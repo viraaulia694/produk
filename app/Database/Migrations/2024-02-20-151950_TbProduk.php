@@ -42,6 +42,7 @@ class TbProduk extends Migration
                 'null'=>true,
             ],
         ]);
+    // $this->forge->addForeignKey('id_pelanggan', 'tb_pelanggan', 'id_pelanggan', 'CASCADE', 'CASCADE');
     $this->forge->addKey('id_produk', TRUE); //panah satu class/fungsi
     $this->forge->createTable('tb_produk', TRUE);
     }
